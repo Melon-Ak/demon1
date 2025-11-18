@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <!-- ===== 任务栏 / 标题栏（顶部） ===== -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="快捷键列表"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#E3F2FD"
+    android:padding="12dp"
+    android:textColor="#0D47A1" />
+
+    <!-- ===== 分隔线（任务栏与表格之间的分隔线） ===== -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:background="#CCCCCC" />
+
+    <!-- ===== 表格部分（TableLayout）===== -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <!-- 第1行：Open... | Ctrl-O -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Open..."
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:padding="8dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ctrl-O"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:padding="8dp" />
+        </TableRow>
+
+        <!-- 分隔线（每行之间的分隔，可选，TableLayout 行默认有间距，这里再加明显分割线） -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp" />
+
+        <!-- 第2行：Save... | Ctrl-S -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save..."
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:padding="8dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ctrl-S"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:padding="8dp" />
+        </TableRow>
+
+        <!-- 分隔线 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp" />
+
+        <!-- 第3行：Save As... | Ctrl-Shift-S -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save As..."
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:padding="8dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ctrl-Shift-S"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:padding="8dp" />
+        </TableRow>
+
+        <!-- 分隔线 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp" />
+
+        <!-- 第4行：Import... | (空) -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Import..."
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:padding="8dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:padding="8dp" />
+        </TableRow>
+
+        <!-- 分隔线 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp" />
+
+        <!-- 第5行：Export... | Ctrl-E -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Export..."
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:padding="8dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ctrl-E"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:padding="8dp" />
+        </TableRow>
+
+        <!-- 分隔线 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp" />
+
+        <!-- 第6行：Quit | (空) -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Quit"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:padding="8dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:padding="8dp" />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
