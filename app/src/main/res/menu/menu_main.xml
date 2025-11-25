@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 【字体大小】分组：小、中、大 -->
+    <group android:id="@+id/font_size_group">
+        <item
+            android:id="@+id/font_small"
+            android:title="小" />
+        <item
+            android:id="@+id/font_medium"
+            android:title="中" />
+        <item
+            android:id="@+id/font_large"
+            android:title="大" />
+    </group>
+
+    <!-- 【普通菜单项】：点击直接弹 Toast -->
+    <item
+        android:id="@+id/menu_toast"
+        android:title="普通菜单项" />
+
+    <!-- 【字体颜色】分组：红、黑 -->
+    <group android:id="@+id/font_color_group">
+        <item
+            android:id="@+id/font_red"
+            android:title="红色" />
+        <item
+            android:id="@+id/font_black"
+            android:title="黑色" />
+    </group>
+
+</menu>
